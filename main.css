@@ -1,0 +1,557 @@
+@font-face {
+  font-family: "SummerDays";
+  src: url('./assets/fonts/SummerDays.ttf') format('truetype');
+}
+
+body {
+  background: black !important;
+  color: white !important;
+}
+
+/* COLORS */
+
+.blue {
+  color:#00A8FF;
+}
+
+.red {
+  color: #da291c;
+}
+
+.redTitle {
+  text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
+}
+
+.blueTitle {
+  text-shadow: 2px 2px 0px  #00A8FF, -2px -2px 0px  #00A8FF, 2px -2px 0px  #00A8FF, -2px 2px 0px  #00A8FF;
+}
+
+.greenTitle {
+  text-shadow: 2px 2px 0px  #47E82C, -2px -2px 0px  #47E82C, 2px -2px 0px  #47E82C, -2px 2px 0px  #47E82C;
+}
+
+#chickenTitle {
+  text-shadow: 3px 3px 0px  #da291c, -3px -3px 0px  #da291c, 3px -3px 0px  #da291c, -3px 3px 0px  #da291c;
+}
+
+#smashburgerTitle {
+  text-shadow: 3px 3px 0px  #00A8FF, -3px -3px 0px  #00A8FF, 3px -3px 0px  #00A8FF, -3px 3px 0px  #00A8FF;
+}
+
+/* GENERAL */
+
+.title {
+  font-family: "SummerDays";
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.menuTxt {
+  font-size: 24px;
+  font-family: "SummerDays";
+  text-align: center;
+}
+/* LOGO + NAVBAR */
+
+.navbar {
+  position: fixed !important;
+  background: black !important;
+  width:100% !important;
+  z-index:9999;
+}
+
+.navbar-collapse {
+  padding-bottom:24px;
+  border-bottom:2px solid white;
+}
+
+#logo {
+  display: none;
+}
+
+#logo-container {
+  position: fixed;
+  background-color: black;
+  top:0px;
+  z-index:9999;
+}
+
+#logo-mobile {
+  width:128px;
+}
+
+.nav-item {
+  margin-left:22px;
+  margin-right:22px;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "SummerDays";
+  font-size: 32px !important;
+  text-transform: capitalize !important;
+}
+
+.nav-link:hover {
+  transition: 0.2s;
+  text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
+}
+
+#orderOnlineButton {
+  border: 2px solid white;
+  padding: 0px 16px;
+  text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
+  border-color:#da291c;
+  background: #da291c;
+  text-align: center;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./assets/images/bars-white.png") !important;
+}
+
+/* BANNER */
+
+#banner {
+  display: none;
+}
+
+#mobileBanner {
+  width:60%;
+  height:auto;
+  padding-top:69px;
+  margin-bottom:40px;
+}
+
+/* MOBILE OVERRIDES */
+
+#welcomeToSmashville {
+  width:80%;
+}
+
+#welcomeTxt {
+  font-family: "SummerDays";
+  font-size: 30px;
+}
+
+#menuNeon {
+  width:100%;
+  max-width: 400px;
+  height:auto;
+}
+
+#heatIndex {
+  font-family: "SummerDays";
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+#heatIndexImg {
+  display: none;
+}
+#heatIndexImgMobile {
+  display: block;
+  max-width:80%;
+}
+
+
+.line {
+  max-width:95%;
+}
+
+
+/* MENU ITEMS */
+
+.item-title {
+  font-size:28px;
+  letter-spacing: 4px;
+  font-family: "SummerDays";
+}
+
+.price {
+  text-shadow: none;
+  font-family: "SummerDays";
+  font-size: 36px;
+  letter-spacing: 4px;
+  color:white;
+}
+
+.item-description {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "SummerDays";
+  color:white;
+  line-height: 24px;
+
+}
+
+.food-item-container {
+  width:95%;
+}
+
+#locationContainer {
+  position: relative;
+}
+
+#locationPin {
+  width:100%;
+  height: auto;
+}
+
+#locationAddress {
+  position: absolute;
+  top:80px;
+  left:8%;
+  font-family: "SummerDays";
+  z-index: 9998;
+  color:white;
+  font-size:20px;
+
+}
+
+#hoursTxt {
+  font-family: "SummerDays";
+  font-size: 24px;
+}
+
+/* FAQ */
+
+.faqItem {
+  border-bottom:1px solid white;
+}
+.question {
+  font-size: 20px;
+  font-family: "SummerDays";
+  display: flex;
+  margin-bottom:10px;
+  text-transform: capitalize !important;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.answer {
+  font-size: 16px;
+  font-family: "SummerDays";
+  padding-left:40px;
+}
+
+.togglePlus {
+  width: 24px;
+  height:24px;
+  margin-right:16px;
+}
+
+.faqRow {
+  width:100%;
+}
+
+.socialsContainer {
+  margin-top:16px !important;
+  margin-bottom:100px;
+}
+
+
+.socials {
+  max-height: 48px !important;
+  width: auto !important;
+}
+
+
+/* SWIPER */
+
+.swiper {
+  width: 95%;
+  min-height: 375px;
+}
+
+.sliderImage {
+  width:60%;
+  height:auto;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color:white !important;
+}
+
+#menuAnchor {
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #logo {
+    display: block;
+    width:304px;
+  }
+
+  #logo-mobile {
+    display: none !important;
+  }
+  .navbar {
+    position: fixed !important;
+    background: black !important;
+    width:100% !important;
+    top:137.91px;
+    z-index:9999;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      justify-content: center;
+  }
+  .navbar-collapse {
+    padding-bottom:24px;
+    border-bottom:0px;
+  }
+
+  body {
+    padding-top:242px;
+  }
+
+  #banner {
+    display: block;
+    width:100%;
+  }
+
+  #mobileBanner {
+    display: none;
+  }
+
+  #orderOnlineButton {
+    border: 2px solid white;
+    padding: 0px 16px;
+    text-shadow: none;
+    border-color:none;
+    background: none;
+  }
+
+  #orderOnlineButton:hover {
+    transition: 0.2s;
+    text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
+    border-color:#da291c;
+    background: #da291c;
+  }
+
+  #welcomeBanner {
+    min-height:500px;
+    background-image: url("./assets/images/welcomeBackgroundGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #menuNeon {
+    width:100%;
+    max-width: 900px;
+    height:auto;
+  }
+
+  #welcomeTxt {
+    font-family: "SummerDays";
+    font-size: 40px;
+    letter-spacing: 10%;
+  }
+  #welcomeToSmashville {
+    width:auto;
+  }
+
+  #menuBanner {
+    height:100%;
+    background-image: url("./assets/images/menuBackgroundGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #hoursBanner {
+    height:100%;
+    background-image: url("./assets/images/hoursGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #locationBanner {
+    height:100%;
+    background-image: url("./assets/images/locationGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #faqBanner {
+    height:100%;
+    background-image: url("./assets/images/faqGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #faqItemBanner {
+    height:100%;
+    background-image: url("./assets/images/faqItemsBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #heatIndex {
+    font-family: "SummerDays";
+    font-size: 72px;
+    letter-spacing: 8px;
+  }
+
+  .menuTxt {
+    font-family: "SummerDays";
+    font-size:32px;
+    text-align: center;
+    letter-spacing: 10%;
+  }
+  .title {
+    font-family: "SummerDays";
+    font-size: 72px;
+    letter-spacing: 8px;
+  }
+
+  #heatIndexImg {
+    width:auto;
+    height:auto;
+    display: block;
+  }
+
+  #heatIndexImgMobile {
+    display: none;
+  }
+  .item-title {
+    font-size:48px;
+    letter-spacing: 8px;
+    font-family: "SummerDays";
+  }
+
+  .price {
+    text-shadow: 2px 2px 0px  white, -2px -2px 0px  white, 2px -2px 0px  white, -2px 2px 0px  white;
+    font-family: "SummerDays";
+    font-size: 48px;
+    letter-spacing: 8px;
+    color:black;
+  }
+
+  .item-description {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "SummerDays";
+    color:white;
+    line-height: 32px;
+
+  }
+
+  .line {
+    width:75%;
+  }
+
+  .food-item-container {
+    width:75%;
+  }
+
+  #itemsBackgroundGraffiti {
+    background-image: url("./assets/images/itemsBackgroundGraffiti.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+  }
+
+  .swiper {
+    width: 45%;
+    min-height: 600px;
+    background-image: url("./assets/images/swiperBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+  }
+
+  .sliderImage {
+    width:auto;
+    height:500px;
+  }
+
+  #hoursTxt {
+    font-family: "SummerDays";
+    font-size: 48px;
+    letter-spacing: 4px;
+    line-height:52px;
+  }
+
+
+  #locationAddress {
+    position: absolute;
+    top:300px;
+    left:35%;
+    font-family: "SummerDays";
+    z-index: 9998;
+    color:white;
+    font-size:48px;
+
+  }
+
+  .question {
+    font-size: 36px;
+    font-family: "SummerDays";
+  }
+
+  .answer {
+    font-size: 24px;
+    font-family: "SummerDays";
+    padding-left:40px;
+  }
+
+  .togglePlus {
+    width: 40px;
+    height:40px;
+  }
+
+  .faqRow {
+    width:75%;
+  }
+
+  .socials {
+    width:80px !important;
+    height:auto;
+    padding-bottom:20px;
+    box-sizing: border-box;
+    min-height:80px;
+  }
+
+  .socials:hover {
+    cursor: pointer;
+    border-bottom:4px solid #da291c;
+    padding-bottom:16px;
+    box-sizing: border-box;
+  }
+
+  .socialsContainer {
+    margin-top:24px !important;
+    margin-bottom: 100px;
+  }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
