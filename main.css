@@ -260,7 +260,9 @@ body {
 
 
 /* SWIPER */
-
+.swiper-pagination {
+  bottom: 0px !important;
+}
 .swiper {
   width: 95%;
   min-height: 375px;
