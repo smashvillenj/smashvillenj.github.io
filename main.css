@@ -11,7 +11,7 @@ body {
 /* COLORS */
 
 .blue {
-  color:#00A8FF;
+  color:#00A8FF !important;
 }
 
 .red {
