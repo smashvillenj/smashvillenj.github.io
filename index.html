@@ -1,1 +1,798 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <title>Smashville NJ</title>
+</head>
+
+<body>
+
+
+  <!-- LOGO -->
+  <div id="logo-container" class="container-fluid d-flex justify-content-center align-items-center p-4">
+    <img src="./assets/images/logo.png" alt="smashvillenj-logo" id="logo" class="">
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo-mobile.png" alt="" id="logo-mobile" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#menuAnchor">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galleryAnchor">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hoursAnchor">HOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#locationAnchor">LOCATION</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faqAnchor">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactAnchor">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick" id="orderOnlineButton">ORDER ONLINE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col d-flex flex-column align-items-center justify-content-center">
+        <div class=" d-flex justify-content-center">
+          <img src="./assets/images/banner.png" id="banner" alt="">
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <img src="./assets/images/mobileBanner.png" id="mobileBanner" class="mb-3" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- WELCOME -->
+
+        <div class="mb-3 m-lg-5 mb-lg-0 mt-lg-0 container-fluid d-flex flex-column justify-content-center align-items-center" id="welcomeBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/welcomeToSmashville.png" id="welcomeToSmashville" alt="">
+              <span id="welcomeTxt" class="m-3 m-lg-5">
+                THE BEST <span class="red">HOT CHICKEN</span> AND <br /> <span class="blue">SMASHBURGERS</span> IN JERSEY
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <a class="anchor" id="menuAnchor"></a>
+        <!-- MENU -->
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="menuBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/MENU.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+        </div>
+
+        <div id="itemsBackgroundGraffiti" class="d-flex justify-content-center flex-column align-items-center">
+
+
+        <!-- HEAT INDEX -->
+        <div class="mb-0 mb-lg-2 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <div id="heatIndex" class="mb-3 redTitle">
+                HEAT INDEX
+              </div>
+              <div class="menuTxt mb-3">
+                FOR ANYTHING HOT CHICKEN. CHOOSE YOUR SPICE LEVEL
+              </div>
+              <img src="./assets/images/line.png" class="mb-5 line" alt="line" style="width:100%;max-width:100%;">
+              <img src="./assets/images/heatScale.png" class="mb-5" id="heatIndexImg" alt="heatIndex">
+              <img src="./assets/images/heatScaleMobile.png" class="mb-5" id="heatIndexImgMobile" alt="heatIndex">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- HOT CHICKEN -->
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <div id="chickenTitle" class="title mb-3">
+                HOT CHICKEN
+              </div>
+              <img src="./assets/images/line.png" class="mb-3 mb-lg-5  line" alt="line">
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title redTitle">
+                    CHICKEN SAMMY
+                  </div>
+                  <div class="price">
+                    10$
+                  </div>
+                </div>
+                <div class="item-description">
+                  Nashville Hot Chicken Tender, Pickles, Coleslaw, Comeback sauce, served on a freshly baked Brioche Bun
+                </div>
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title redTitle">
+                    HOT FRIES
+                  </div>
+                  <div class="price">
+                    11$
+                  </div>
+                </div>
+                <div class="item-description">
+                  chopped up Nashville Hot Chicken tender, Pickles, Coleslaw, Comeback sauce, served over a bed of crispy seasonedfries
+                </div>
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title redTitle">
+                    SINGLE TENDER
+                  </div>
+                  <div class="price">
+                    4$
+                  </div>
+                </div>
+                <div class="item-description">
+                  A Nashville Hot Chicken Tender, pick how spicy you like it
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMASHBURGERS -->
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <div id="smashburgerTitle" class="title mb-3">
+                SMASHBURGERS
+              </div>
+              <img src="./assets/images/line.png" class="mb-3 mb-lg-5 line" alt="line">
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title blueTitle">
+                    SINGLE PATTY
+                  </div>
+                  <div class="price">
+                    6$
+                  </div>
+                </div>
+                <div class="item-description">
+                </div>
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title blueTitle">
+                    DOUBLE PATTY
+                  </div>
+                  <div class="price">
+                    8$
+                  </div>
+                </div>
+                <div class="item-description">
+                  Smashed beef patty, melted American Cheese, Pickles, Sauteed Onions, Smash sauce, served on a Potato Roll                </div>
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title blueTitle">
+                    SMASHFRIES
+                  </div>
+                  <div class="price">
+                    11$
+                  </div>
+                </div>
+                <div class="item-description">
+                  chopped up SMASHBURGER PATTY, Pickles, Coleslaw, Comeback sauce, served over a bed of crispy seasonedfries                </div>
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title greenTitle">
+                    IMPOSSIBLE PATTY
+                  </div>
+                  <div class="price">
+                    9$
+                  </div>
+                </div>
+                <div class="item-description">
+                  Smashed Plant based meat patty, melted American Cheese, Pickles, Sauteed Onions, Smash sauce, served on a potato roll
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXTRAS -->
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row w-100">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <div class="title mb-3">
+                EXTRAS
+              </div>
+              <img src="./assets/images/line.png" class="mb-3 mb-lg-5  line" alt="line">
+
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    FRIES
+                  </div>
+                  <div class="price">
+                    4$
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    SMASHSAUCE
+                  </div>
+                  <div class="price">
+                    0.50$
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    COMEBACK SAUCE
+                  </div>
+                  <div class="price">
+                    0.50$
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    MEXICAN COKE
+                  </div>
+                  <div class="price">
+                    3.50$
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    CANNED SODA
+                  </div>
+                  <div class="price">
+                    2$
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1" >
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    WATER
+                  </div>
+                  <div class="price">
+                    1.50$
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <a class="anchor" id="galleryAnchor"></a>
+
+    <!-- GALLERY -->
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="menuBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/gallery.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slider main container -->
+        <div class="swiper mb-5">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/images/sliderImage1.png" class="sliderImage" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/sliderImage2.png" class="sliderImage" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/sliderImage3.png" class="sliderImage" alt=""></div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <a class="anchor" id="hoursAnchor"></a>
+
+        <!-- HOURS -->
+        <div class="pb-lg-5 pb-3 pt-lg-5 pt-3 container-fluid d-flex flex-column justify-content-center align-items-center" id="hoursBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/hours.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+          <div class="row w-75" >
+            <div class="col d-flex flex-column " id="hoursTxt">
+              Monday: 12-9PM <br />
+              Tuesday: 12-9PM <br />
+              Wednesday: 12-9PM <br />
+              Thursday: 12-9PM <br />
+              Friday + Saturday: 12-10PM <br />
+              Sundays: 1-9PM
+            </div>
+          </div>
+        </div>
+
+        <a class="anchor" id="locationAnchor"></a>
+
+        <!-- LOCATION -->
+
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="locationBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/location.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+        </div>
+        <div class="" id="locationContainer">
+          <img src="./assets/images/locationPin.png" id="locationPin" alt="">
+          <div class="" id="locationAddress">
+            377a George St, New Brunswick, New Jersey 08901
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <a class="anchor" id="faqAnchor"></a>
+
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="faqBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/faq.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="faqItemBanner">
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  What is Nashville Hot Chicken?
+                </div>
+                <div class="answer">
+                  Nashville Hot Chicken is a style of fried chicken originated in Nashville, Tennessee. Chicken is fried, then dipped a spicy oil of your choosing, and dusted with a spice blend for a flavorful, and SPICY fried chicken experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  What is a smashburger?
+                </div>
+                <div class="answer">
+                  Smashburgers are different from other burgers in that they are literally smashed from a regular patty size onto a scorching hot grill resulting in a delicious crust with thin well done patties packed with flavor.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  How/where can I park?
+                </div>
+                <div class="answer">
+                  The closest parking options are:
+                  <br /> -Metered street parking along Church street or Paterson Street
+                  <br /> -Parking garage on Church Street or Paterson Street
+                  <br /> -For pickups: Parking in either garage next to the restaurants is free UNDER 30 minutes, so if you are picking up, this is your best option.
+                  <br /> *parking tickets are strictly enforced around George street, please avoid being ticketed by either paying for meter/garage parking, avoid parking in loading/restricted zones**
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Do you have seating available?
+                </div>
+                <div class="answer">
+                  We do have seating available on the second floor of the restaurant, around 25 seats available
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Do you take reservations?
+                </div>
+                <div class="answer">
+                  We do not take reservations, first come first serve
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  When is your last order?
+                </div>
+                <div class="answer">
+                  Our last order over the phone is 30 minutes before we close as listed online
+                  <br /> Our last order in person is 15 minutes before we close as listed online
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Are you open on holidays?
+                </div>
+                <div class="answer">
+                  We are open on almost all holidays, call restaurant/check google for updated hours of operations on holidays
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Do you use nuts in any of your foods/oils?
+                </div>
+                <div class="answer">
+                  We use no nut-based ingredients/oils
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Is there mayo in your sauce?
+                </div>
+                <div class="answer">
+                  All of our sauces are mayonnaise based
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Is there dairy in your products?
+                </div>
+                <div class="answer">
+                  We use dairy in our chicken products (eggs, milk) for battering
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Do you have vegetarian/vegan options?
+                </div>
+                <div class="answer">
+                  We have the impossible patty/impossible fries. Impossible meat is vegan, and we receive this straight from the Impossible company. Although the meat is vegan, the burger/loaded fries ingredients are not, making both a vegetarian option
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Do you have gluten-free options?
+                </div>
+                <div class="answer">
+                  Not at this time
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Can I bring food from somewhere else and eat it there?
+                </div>
+                <div class="answer">
+                  No outside food or drinks allowed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                  <div class="plusMinusToggler">
+                    <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                    <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                  </div>
+                  Can I bring food from somewhere else and eat it there?
+                </div>
+                <div class="answer">
+                  No outside food or drinks allowed
+                  <br /> **For further dietary restrictions, please call or email the restaurant with any concerns
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                <div class="plusMinusToggler">
+                  <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                  <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                </div>
+                Are you handicap accessible?
+                </div>
+                <div class="answer">
+                  For pickup/carry out, yes we are. Unfortunately our only seating space is available upstairs, so we do not have wheelchair access for the dining room
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-lg-3 mb-1 container-fluid d-flex flex-column justify-content-center align-items-center">
+          <div class="row faqRow">
+            <div class="col">
+              <div class="faqItem">
+                <div class="question">
+
+                <div class="plusMinusToggler">
+                  <img src="./assets/images/plus.png" class="togglePlus" alt="">
+                  <img src="./assets/images/minus.png" class="togglePlus" alt="" style="display:none">
+                </div>
+                Is your meat halal?
+                </div>
+                <div class="answer">
+                  All of our meat is 100% zabiha halal certified <br />
+                  Chicken is hand slaughtered zabiha halal certified <br />
+                  Beef is machine slaughtered zabiha halal certified <br />
+                  **Certificates available on site upon request
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="anchor" id="contactAnchor"></a>
+
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="menuBanner">
+          <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+              <img src="./assets/images/contact.png" alt="menuNeonLights" id="menuNeon">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pb-lg-5 pb-3 pt-lg-5 pt-3 container-fluid d-flex flex-column justify-content-center align-items-center" id="hoursBanner">
+          <div class="row w-75" >
+            <div class="col d-flex flex-column " id="hoursTxt">
+              PHONE: (732) 317-2200 <br />
+              EMAIL: Smashvillenj@gmail.com <br />
+            </div>
+          </div>
+          <div class="row w-75 socialsContainer">
+            <img src="./assets/images/instagram.png" class="socials" alt="instagramSmashvilleNJ" >
+            <img src="./assets/images/tiktok.png" class="socials" alt="tiktokSmashvilleNJ">
+            <img src="./assets/images/facebook.png" class="socials" alt="facebookSmashvilleNJ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $(".answer").hide();
+
+      $(".question").click(function () {
+        $(this).next(".answer").slideToggle('fast');
+        $(this).find('img').toggle();
+      });
+      });
+    </script>
+  <script type="text/javascript">
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      centeredSlides: {
+        el:true
+      },
+      centeredSlidesBounds: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+</body>
+
+</html>
