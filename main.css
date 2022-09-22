@@ -3,6 +3,11 @@
   src: url('./assets/fonts/SummerDays.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Gobold";
+  src: url('./assets/fonts/goboldThin.otf') format('opentype');
+}
+
 body {
   background: black !important;
   color: white !important;
@@ -211,19 +216,20 @@ body {
 
 #clipboardContainer {
   padding: 16px 8px;
-  border: 1px solid white;
-  border-radius:8px;
+  /* border: 1px solid white;
+  border-radius:8px; */
 }
 
 #locationAddress {
-  font-family: "SummerDays";
+  font-family: "Gobold";
   color:white;
-  font-size:24px;
+  font-size:20px;
 }
 
 #hoursTxt {
-  font-family: "SummerDays";
-  font-size: 24px;
+  font-family: "Gobold";
+  font-size: 20px;
+  padding:0px;
 }
 
 /* FAQ */
@@ -232,11 +238,10 @@ body {
   border-bottom:1px solid white;
 }
 .question {
-  font-size: 24px;
-  font-family: "SummerDays";
+  font-size: 22px;
+  font-family: "Gobold";
   display: flex;
   margin-bottom:10px;
-  text-transform: capitalize !important;
 }
 
 .question:hover {
@@ -244,9 +249,10 @@ body {
 }
 
 .answer {
-  font-size: 22px;
-  font-family: "SummerDays";
+  font-size: 18px;
+  font-family: "Gobold";
   padding-left:40px;
+  padding-bottom:8px;
 }
 
 .togglePlus {
