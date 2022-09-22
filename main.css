@@ -203,15 +203,22 @@ body {
   position: relative;
 }
 
-#locationPin {
-  width:100%;
-  height: auto;
+#pin {
+  height:24px;
+  width:auto;
+  margin-right:8px;
+}
+
+#clipboardContainer {
+  padding: 16px 8px;
+  border: 1px solid white;
+  border-radius:8px;
 }
 
 #locationAddress {
   font-family: "SummerDays";
   color:white;
-  font-size:20px;
+  font-size:24px;
 }
 
 #hoursTxt {
@@ -261,6 +268,7 @@ body {
 .socials {
   max-height: 48px !important;
   width: auto !important;
+  margin: 10px;
 }
 
 
@@ -545,21 +553,26 @@ a.anchor {
   .socials {
     width:80px !important;
     height:auto;
-    padding-bottom:20px;
-    box-sizing: border-box;
     min-height:80px;
+    margin:20px;
+    box-sizing: border-box;
   }
 
   .socials:hover {
     cursor: pointer;
     border-bottom:4px solid #da291c;
-    padding-bottom:16px;
     box-sizing: border-box;
   }
 
   .socialsContainer {
     margin-top:24px !important;
     margin-bottom: 100px;
+  }
+
+  #pin {
+    height: 48px;
+    width: auto;
+    margin-right:16px;
   }
 
 }
