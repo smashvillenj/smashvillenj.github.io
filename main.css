@@ -220,7 +220,7 @@ body {
   border-bottom:1px solid white;
 }
 .question {
-  font-size: 20px;
+  font-size: 24px;
   font-family: "SummerDays";
   display: flex;
   margin-bottom:10px;
@@ -232,7 +232,7 @@ body {
 }
 
 .answer {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "SummerDays";
   padding-left:40px;
 }
@@ -515,11 +515,6 @@ a.anchor {
     font-family: "SummerDays";
   }
 
-  .answer {
-    font-size: 24px;
-    font-family: "SummerDays";
-    padding-left:40px;
-  }
 
   .togglePlus {
     width: 40px;
