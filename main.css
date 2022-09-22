@@ -209,14 +209,9 @@ body {
 }
 
 #locationAddress {
-  position: absolute;
-  top:80px;
-  left:8%;
   font-family: "SummerDays";
-  z-index: 9998;
   color:white;
   font-size:20px;
-
 }
 
 #hoursTxt {
@@ -271,7 +266,7 @@ body {
 
 /* SWIPER */
 .swiper-pagination {
-  bottom: 0px !important;
+  bottom: -5px !important;
 }
 .swiper {
   width: 95%;
@@ -527,14 +522,9 @@ a.anchor {
 
 
   #locationAddress {
-    position: absolute;
-    top:300px;
-    left:35%;
     font-family: "SummerDays";
-    z-index: 9998;
     color:white;
     font-size:48px;
-
   }
 
   .question {
