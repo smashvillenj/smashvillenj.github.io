@@ -132,6 +132,7 @@ body {
 .nav-social {
   width:48px;
   height:auto;
+  max-height:auto;
 }
 
 /* BANNER */
