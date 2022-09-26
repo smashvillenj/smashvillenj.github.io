@@ -4,8 +4,13 @@
 }
 
 @font-face {
-  font-family: "Gobold";
-  src: url('./assets/fonts/goboldThin.otf') format('opentype');
+  font-family: "Barter";
+  src: url('./assets/fonts/BarterThin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Barter";
+  src: url('./assets/fonts/Barter.ttf') format('truetype');
 }
 
 body {
@@ -57,7 +62,6 @@ body {
   text-align: center;
 }
 /* LOGO + NAVBAR */
-
 .navbar {
   position: fixed !important;
   background: black !important;
@@ -92,7 +96,7 @@ body {
 
 .nav-link {
   color: white !important;
-  font-family: "SummerDays";
+  font-family: "Barter";
   font-size: 32px !important;
   text-transform: capitalize !important;
 }
@@ -123,6 +127,11 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("./assets/images/bars-white.png") !important;
+}
+
+.nav-social {
+  width:48px;
+  height:auto;
 }
 
 /* BANNER */
@@ -171,7 +180,7 @@ body {
 
 
 .line {
-  max-width:95%;
+  max-width:100%;
 }
 
 
@@ -221,13 +230,13 @@ body {
 }
 
 #locationAddress {
-  font-family: "Gobold";
+  font-family: "Barter";
   color:white;
   font-size:19.5px;
 }
 
 #hoursTxt {
-  font-family: "Gobold";
+  font-family: "Barter";
   font-size: 20px;
   padding:0px;
 }
@@ -239,7 +248,7 @@ body {
 }
 .question {
   font-size: 22px;
-  font-family: "Gobold";
+  font-family: "Barter";
   display: flex;
   margin-bottom:10px;
 }
@@ -250,7 +259,7 @@ body {
 
 .answer {
   font-size: 18px;
-  font-family: "Gobold";
+  font-family: "Barter";
   padding-left:40px;
   padding-bottom:8px;
 }
@@ -579,6 +588,10 @@ a.anchor {
     height: 48px;
     width: auto;
     margin-right:16px;
+  }
+
+  .mobileSocials {
+    display:none;
   }
 
 }
