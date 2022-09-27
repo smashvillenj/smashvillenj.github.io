@@ -50,6 +50,32 @@ body {
 
 /* GENERAL */
 
+#fixedOrderNowButton {
+  width:100%;
+  max-width:100%;
+  margin:0px;
+  height:60px;
+  box-sizing: border-box;
+  background: #da291c;
+  color:white;
+  font-family: "Barter";
+  font-size: 36px;
+  text-align: center;
+  line-height: 60px;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  text-decoration: none;
+  border: 2px solid #da291c;
+}
+
+#fixedOrderNowButton:hover {
+  color: #da291c;
+  transition: 0.2s;
+  background-color: white;
+  border:2px solid #da291c;
+}
+
 .title {
   font-family: "SummerDays";
   font-size: 36px;
@@ -176,7 +202,7 @@ body {
 }
 #heatIndexImgMobile {
   display: block;
-  max-width:80%;
+  max-width:90%;
 }
 
 
@@ -290,7 +316,7 @@ body {
 
 /* SWIPER */
 .swiper-pagination {
-  bottom: -5px !important;
+  display: none;
 }
 .swiper {
   width: 95%;
@@ -477,7 +503,7 @@ a.anchor {
   }
 
   #heatIndexImg {
-    width:auto;
+    width:70%;
     height:auto;
     display: block;
   }
