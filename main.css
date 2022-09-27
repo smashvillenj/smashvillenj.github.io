@@ -396,12 +396,17 @@ a.anchor {
     display: none;
   }
 
+  #fixedOrderNowButton {
+    display:none;
+  }
+
   #orderOnlineButton {
-    border: 2px solid white;
+    border: 2px solid #da291c;
     padding: 0px 16px;
     text-shadow: none;
     border-color:none;
-    background: none;
+    background: #da291c;
+    color:white;
   }
 
   #orderOnlineButton:hover {
