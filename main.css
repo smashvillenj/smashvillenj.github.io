@@ -67,6 +67,7 @@ body {
   left:0px;
   text-decoration: none;
   border: 2px solid #da291c;
+  z-index: 9999;
 }
 
 #fixedOrderNowButton:hover {
