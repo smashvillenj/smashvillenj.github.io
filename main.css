@@ -538,7 +538,7 @@ a.anchor {
   }
 
   #hoursTxt {
-    font-family: "SummerDays";
+    font-family: "Barter";
     font-size: 48px;
     letter-spacing: 4px;
     line-height:52px;
@@ -546,14 +546,18 @@ a.anchor {
 
 
   #locationAddress {
-    font-family: "SummerDays";
+    font-family: "Barter";
     color:white;
     font-size:48px;
   }
 
   .question {
     font-size: 36px;
-    font-family: "SummerDays";
+    font-family: "Barter";
+  }
+
+  .answer {
+    font-size: 24px;
   }
 
 
