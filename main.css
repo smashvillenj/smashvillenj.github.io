@@ -411,26 +411,25 @@ a.anchor {
 
   #orderOnlineButton:hover {
     transition: 0.2s;
-    text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
-    border-color:#da291c;
-    background: #da291c;
+    border-color:#8f1b12;
+    background: #8f1b12;
   }
 
   #grubHubButton {
     border: 2px solid white;
     padding: 0px 16px;
     text-shadow: none;
-    border-color:none;
-    background: none;
-    color:white !important;
+    border-color:1px solid #da291c;
+    background: white;
+    color:#da291c !important;
     margin-top:0px !important;
   }
 
   #grubHubButton:hover {
     transition: 0.2s;
     text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
-    border-color:#da291c;
     background: #da291c;
+    color:white !important;
   }
 
   #welcomeBanner {
