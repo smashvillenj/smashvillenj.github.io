@@ -231,14 +231,14 @@ body {
 .item-description {
   font-size: 20px;
   text-transform: uppercase;
-  font-family: "SummerDays";
+  font-family: "Barter";
   color:white;
   line-height: 24px;
 
 }
 
 .food-item-container {
-  width:95%;
+  width:100%;
 }
 
 #locationContainer {
@@ -252,20 +252,35 @@ body {
 }
 
 #clipboardContainer {
-  padding: 0px !important;
-  /* border: 1px solid white;
-  border-radius:8px; */
+  padding: 24px 48px !important;
+
 }
 
 #locationAddress {
+  border: 1px solid #222;
+  border-radius:8px;
+  background-color: #222;
+  box-sizing: border-box;
   font-family: "Barter";
   color:white;
-  font-size:19.5px;
+  font-size:24px;
+  padding:24px 26px;
+  text-align: center;
+  text-decoration: underline
+}
+
+#tapMap {
+  text-align: center;
+  font-size:24px;
+  font-family: "Barter";
+  padding:16px;
+  background-color: #f1c40f;
+  border-radius: 0 0 8px 8px
 }
 
 #hoursTxt {
   font-family: "Barter";
-  font-size: 20px;
+  font-size: 24px;
   padding:0px;
 }
 
@@ -533,7 +548,7 @@ a.anchor {
   .item-description {
     font-size: 32px;
     text-transform: uppercase;
-    font-family: "SummerDays";
+    font-family: "Barter";
     color:white;
     line-height: 32px;
 
@@ -576,7 +591,7 @@ a.anchor {
   }
 
 
-  #locationAddress {
+  #clipboardContainer {
     font-family: "Barter";
     color:white;
     font-size:48px;
