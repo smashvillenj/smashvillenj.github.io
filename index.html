@@ -414,13 +414,40 @@
       </div>
       <div class="row">
         <div class="col d-flex justify-content-center flex-column" id="clipboardContainer">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps?q=SMASHVILLE+Hot+Chicken+%26+Burgers,+377a+George+St,+New+Brunswick,+NJ+08901&ftid=0x89c3c7cadff5592d:0x470132154eaf1ab0&hl=en-US&gl=us&entry=gps&g_ep=CAISBjYuMjYuMhgA&shorturl=1" class="" id="locationAddress">
+          <div class="" id="locationAddress">
             377a George St, New Brunswick, NJ 08901
-          </a>
-          <!-- <div id="tapMap">
+          </div>
+          <div id="tapMap">
             Tap to open in maps
-          </div> -->
+          </div>
         </div>
+      </div>
+
+      <div class="mapSlideUpContainer slide-down">
+        <div class="topSlide d-flex flex-column">
+          <div class="titleMapSlide">
+            Choose map option
+          </div>
+          <a target="_blank" rel="noopener noreferrer" href="https://maps.apple.com/?address=377%20George%20St,%20New%20Brunswick,%20NJ%20%2008901,%20United%20States&auid=1938394694998303872&ll=40.495661,-74.443776&lsp=9902&q=Smashville&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhAUCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKbNG86fePkRAMQapFJrHnFLAOTEcGQQFQERAQa71Vg8GnFLAUAM%3D" class="itemSlider">
+            Apple Maps
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.waze.com/en/live-map/directions/us/nj/new-brunswick/smashville-hot-chicken-and-burgers?place=ChIJLVn138rHw4kRsBqvThUyAUc" class="itemSlider">
+            WAZE Maps
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps?q=SMASHVILLE+Hot+Chicken+%26+Burgers,+377a+George+St,+New+Brunswick,+NJ+08901&ftid=0x89c3c7cadff5592d:0x470132154eaf1ab0&hl=en-US&gl=us&entry=gps&g_ep=CAISBjYuMjYuMhgA&shorturl=1" class="itemSlider">
+            Google Maps
+          </a>
+
+        </div>
+
+        <div class="cancelButton">
+          Cancel
+        </div>
+
+      </div>
+
+      <div class="backgroundBlur hide">
+
       </div>
       <!-- <div class="" id="locationContainer">
         <img src="./assets/images/locationPin.png" id="locationPin" alt="">
@@ -784,6 +811,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
   <script type="text/javascript">
     $(document).ready(function() {
       $(".answer").hide();
@@ -796,6 +825,34 @@
       $(".nav-link").click(function() {
         $('.navbar-collapse').toggleClass('show')
       });
+
+      $('#tapMap').click(function() {
+      if($('.mapSlideUpContainer').hasClass('slide-up')) {
+        $('.mapSlideUpContainer').addClass('slide-down', 1000, 'easeOutBounce');
+        $('.mapSlideUpContainer').removeClass('slide-up');
+        } else {
+        $('.mapSlideUpContainer').removeClass('slide-down');
+        $('.mapSlideUpContainer').addClass('slide-up', 1000, 'easeOutBounce');
+        $('body').toggleClass('noscroll');
+        $('.backgroundBlur').toggleClass('hide');
+        }
+      });
+
+      $('.cancelButton, .backgroundBlur, .itemSlider').click(function () {
+        $('.mapSlideUpContainer').removeClass('slide-up');
+        $('.mapSlideUpContainer').addClass('slide-down', 1000, 'easeOutBounce');
+        $('body').toggleClass('noscroll');
+        $('.backgroundBlur').toggleClass('hide');
+
+      });
+      //
+      // $('.backgroundBlur').click(function () {
+      //   $('.mapSlideUpContainer').removeClass('slide-up');
+      //   $('.mapSlideUpContainer').addClass('slide-down', 1000, 'easeOutBounce');
+      //   $('body').toggleClass('noscroll');
+      //   $('.backgroundBlur').toggleClass('hide');
+      //
+      // })
     });
   </script>
   <script type="text/javascript">
