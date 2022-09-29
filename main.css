@@ -172,6 +172,37 @@ body {
   border:2px solid #da291c;
 }
 
+
+#fixedAnnouncementBanner {
+  width:100%;
+  max-width:100%;
+  margin:0px;
+  height:60px;
+  box-sizing: border-box;
+  background: #fff3cd;
+  color:#FF9C00;
+  font-family: "Barter";
+  font-size: 20px;
+  text-align: center;
+  position:fixed;
+  top:75.76px;
+  left:0px;
+  text-decoration: none;
+  border: 2px solid #fff3cd;
+  z-index: 9997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#fixedAnnouncementBanner img {
+  height:24px;
+  width:auto;
+  margin-right:8px;
+}
+
+
 .title {
   font-family: "SummerDays";
   font-size: 36px;
@@ -266,7 +297,7 @@ body {
 #mobileBanner {
   width:85%;
   height:auto;
-  padding-top:69px;
+  padding-top:136px;
   margin-bottom:40px !important;
 }
 
@@ -748,6 +779,29 @@ a.anchor {
   .mapSlideUpContainer  {
     width: 35%;
     left: 32.5%;
+  }
+
+  #fixedAnnouncementBanner {
+    width:100%;
+    max-width:100%;
+    margin:0px;
+    height:60px;
+    box-sizing: border-box;
+    background: #fff3cd;
+    color:#FF9C00;
+    font-family: "Barter";
+    font-size: 32px;
+    text-align: center;
+    position:fixed;
+    top:242px;
+    left:0px;
+    text-decoration: none;
+    border: 2px solid #fff3cd;
+    z-index: 9997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
 }
