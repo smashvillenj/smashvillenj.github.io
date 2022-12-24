@@ -179,7 +179,7 @@ body {
   margin:0px;
   height:60px;
   box-sizing: border-box;
-  background: #00A8FF;
+  background: !important #00A8FF;
   color:white;
   font-family: "Barter";
   font-size: 20px;
