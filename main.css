@@ -179,8 +179,8 @@ body {
   margin:0px;
   height:60px;
   box-sizing: border-box;
-  background: #fff3cd;
-  color:#FF9C00;
+  background: #00A8FF;
+  color:white;
   font-family: "Barter";
   font-size: 20px;
   text-align: center;
@@ -188,7 +188,7 @@ body {
   top:75.76px;
   left:0px;
   text-decoration: none;
-  border: 2px solid #fff3cd;
+  border: 2px solid #00A8FF;
   z-index: 9997;
   display: flex;
   justify-content: center;
@@ -197,7 +197,7 @@ body {
 }
 
 #fixedAnnouncementBanner img {
-  height:24px;
+  height:30px;
   width:auto;
   margin-right:8px;
 }
@@ -787,8 +787,8 @@ a.anchor {
     margin:0px;
     height:60px;
     box-sizing: border-box;
-    background: #fff3cd;
-    color:#FF9C00;
+    background: #00A8FF;
+    color:white;
     font-family: "Barter";
     font-size: 32px;
     text-align: center;
@@ -796,7 +796,7 @@ a.anchor {
     top:242px;
     left:0px;
     text-decoration: none;
-    border: 2px solid #fff3cd;
+    border: 2px solid #00A8FF;
     z-index: 9997;
     display: flex;
     justify-content: center;
