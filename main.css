@@ -179,8 +179,8 @@ body {
   margin:0px;
   height:60px;
   box-sizing: border-box;
-  background: #00A8FF;
-  background-color: #00A8FF;
+  background: #f39c12; 
+  background-color: #f39c12;
   color:white;
   font-family: "Barter";
   font-size: 20px;
@@ -189,7 +189,7 @@ body {
   top:75.76px;
   left:0px;
   text-decoration: none;
-  border: 2px solid #00A8FF;
+  border: 2px solid #f39c12;
   z-index: 9996;
   display: flex;
   justify-content: center;
