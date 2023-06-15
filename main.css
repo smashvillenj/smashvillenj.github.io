@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "SummerDays";
-  src: url('./assets/fonts/SummerDays.ttf') format('truetype');
+  font-family: "Barter";
+  src: url('./assets/fonts/Barter.ttf') format('truetype');
 }
 
 @font-face {
@@ -13,9 +13,239 @@
   src: url('./assets/fonts/Barter.ttf') format('truetype');
 }
 
+  #welcomeBanner {
+    margin-top:170px;
+  }
+
+
+.containerSlider{
+  background: #000;
+  display: flex;
+  height: 523px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  width:100%;
+  padding-left:20px;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:0px;
+}
+
+.containerSlider:hover {
+  cursor: url('./assets/images/drag.png'), auto;
+}
+.item{
+  width: 300px;
+  height: 450px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+}
+
+.imgSliderTest {
+  width:300px;
+  height:450px;
+  margin-right:0px;
+
+}
+
 body {
   background: black !important;
   color: white !important;
+}
+
+
+
+.containerSlider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.containerSlider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.toggleColumn {
+  flex-direction: column;
+}
+
+  .bigPadding {
+    padding-left: 28px;
+    padding-right:28px ;
+  }
+
+.flexToggle {
+  flex-direction: column;
+}
+
+.deliveryButton {
+  background-color: #da291c !important;
+  color:white !important;
+}
+
+.deliveryButton:hover {
+  cursor:pointer;
+}
+
+.takeoutButton {
+  background-color: #00A8FF !important;
+  color:white !important;
+}
+
+.takeoutButton:hover {
+  cursor:pointer;
+
+}
+
+.delivery-item:hover {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.deliver-item a:hover {
+  color:white !important;
+}
+
+.menuImg {
+  width:100%;
+  height:auto;
+}
+
+.menuImg-container {
+
+  padding-top:0px;
+  margin-top:40px;
+}
+
+.dashedLine {
+  width:100%;
+}
+
+
+
+.deliveryMenuSlider {
+  height:100vh;
+  width:100vw;
+  position:fixed;
+  top:0px;
+  right:0px;
+  background-color:#8e44ad;
+  color:white;
+  z-index:9999;
+  box-sizing: border-box;
+  float:right;
+}
+
+.logoWhite {
+  padding:40px;
+
+}
+
+.delivery-title {
+  font-family: "Barter";
+  font-size:40px;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.delivery-item {
+  font-family: "Barter";
+  font-size:32px;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  border:2px solid white;
+  margin-bottom:20px;
+  text-align: center;
+
+}
+
+.delivery-item a {
+  text-decoration: none;
+  color:white;
+}
+/*.displayNone {
+  display:1;
+  width:0px
+}*/
+
+.toggle2{
+  width:30px;
+  height:30px;
+}
+
+.toggle2:hover {
+  cursor:pointer;
+}
+
+
+
+  .button {
+    width:100%;
+    height:40px;
+    border:2px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:24px;
+    font-family:"Barter";
+    margin-left:10px;
+    margin-right:10px;
+    color:white; text-decoration:none
+  }
+
+  .button:hover {
+  text-shadow: 2px 2px 2px  #da291c, -2px -2px 2px  #da291c, 2px -2px 2px  #da291c, -2px 2px 2px  #da291c;
+  }
+
+  .orderTakeoutContainer {
+    position: fixed;
+    top:108.19px;
+    width:100%;
+    background-color:black;
+    padding-bottom:20px;
+    z-index:9996;
+  }
+
+    .orderTakeoutContainer2 {
+    width:100%;
+    background-color:black;
+    z-index:9996;
+    padding:20px 0px;
+
+  }
+
+.logoDesktopFlex {
+  display: none;
+}
+
+.navbarMobileFullHeight {
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hoverAnimation {
+  height:200px;
+  width:auto;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.smoke {
+  position: absolute;
+  top:0px;
+  left:300px;
+  z-index:9996;
 }
 
 /* COLORS */
@@ -29,24 +259,38 @@ body {
 }
 
 .redTitle {
-  text-shadow: 2px 2px 0px  #da291c, -2px -2px 0px  #da291c, 2px -2px 0px  #da291c, -2px 2px 0px  #da291c;
+  text-shadow: 2px 2px 2px  #da291c, -2px -2px 2px  #da291c, 2px -2px 2px  #da291c, -2px 2px 2px  #da291c;
 }
 
 .blueTitle {
-  text-shadow: 2px 2px 0px  #00A8FF, -2px -2px 0px  #00A8FF, 2px -2px 0px  #00A8FF, -2px 2px 0px  #00A8FF;
+  text-shadow: 2px 2px 2px  #00A8FF, -2px -2px 2px  #00A8FF, 2px -2px 2px  #00A8FF, -2px 2px 2px  #00A8FF;
 }
 
 .greenTitle {
-  text-shadow: 2px 2px 0px  #47E82C, -2px -2px 0px  #47E82C, 2px -2px 0px  #47E82C, -2px 2px 0px  #47E82C;
+  text-shadow: 2px 2px 2px  #47E82C, -2px -2px 2px  #47E82C, 2px -2px 2px  #47E82C, -2px 2px 2px  #47E82C;
+}
+
+.goldTitle {
+    text-shadow: 2px 2px 2px  #DF9D00, -2px -2px 2px  #DF9D00, 2px -2px 2px  #DF9D00, -2px 2px 2px  #DF9D00;
+
+}
+
+.pinkTitle {
+    text-shadow: 2px 2px 2px  #F78FB3, -2px -2px 2px  #F78FB3, 2px -2px 2px  #F78FB3, -2px 2px 2px  #F78FB3;
+
 }
 
 #chickenTitle {
-  text-shadow: 3px 3px 0px  #da291c, -3px -3px 0px  #da291c, 3px -3px 0px  #da291c, -3px 3px 0px  #da291c;
+  text-shadow: 3px 3px 3px  #da291c, -3px -3px 3px  #da291c, 3px -3px 3px  #da291c, -3px 3px 3px  #da291c;
+  width: 100%;
 }
 
 #smashburgerTitle {
-  text-shadow: 3px 3px 0px  #00A8FF, -3px -3px 0px  #00A8FF, 3px -3px 0px  #00A8FF, -3px 3px 0px  #00A8FF;
+  text-shadow: 3px 3px 3px  #00A8FF, -3px -3px 3px  #00A8FF, 3px -3px 3px  #00A8FF, -3px 3px 3px  #00A8FF;
+  width: 100%;
 }
+
+
 
 .slide-up
 {
@@ -205,15 +449,14 @@ body {
 
 
 .title {
-  font-family: "SummerDays";
+  font-family: "Barter";
   font-size: 36px;
   letter-spacing: 4px;
 }
 
 .menuTxt {
   font-size: 24px;
-  font-family: "SummerDays";
-  text-align: center;
+  font-family: "Barter";
 }
 /* LOGO + NAVBAR */
 .navbar {
@@ -225,7 +468,8 @@ body {
 
 .navbar-collapse {
   padding-bottom:24px;
-  border-bottom:2px solid white;
+  height: 100vh;
+  transition: 0.2s;
 }
 
 #logo {
@@ -244,8 +488,7 @@ body {
 }
 
 .nav-item {
-  margin-left:18px;
-  margin-right:18px;
+  margin:0px;
 }
 
 .nav-link {
@@ -267,6 +510,8 @@ body {
   border-color:#da291c;
   background: #da291c;
   text-align: center;
+  color:white !important;
+  text-decoration: none;
 }
 
 #grubHubButton {
@@ -281,6 +526,11 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("./assets/images/bars-white.png") !important;
+}
+
+.activeImg {
+  background-image: url("./assets/images/close.png") !important;
+  transition:0.2s;
 }
 
 .nav-social {
@@ -298,7 +548,7 @@ body {
 #mobileBanner {
   width:85%;
   height:auto;
-  padding-top:74px;
+  padding-top:160px;
   margin-bottom:40px !important;
 }
 
@@ -309,8 +559,8 @@ body {
 }
 
 #welcomeTxt {
-  font-family: "SummerDays";
-  font-size: 30px;
+  font-family: "Barter";
+  font-size: 28px;
 }
 
 #menuNeon {
@@ -320,7 +570,7 @@ body {
 }
 
 #heatIndex {
-  font-family: "SummerDays";
+  font-family: "Barter";
   font-size: 36px;
   letter-spacing: 4px;
 }
@@ -330,7 +580,7 @@ body {
 }
 #heatIndexImgMobile {
   display: block;
-  max-width:90%;
+  max-width:100%;
 }
 
 
@@ -344,19 +594,19 @@ body {
 .item-title {
   font-size:28px;
   letter-spacing: 4px;
-  font-family: "SummerDays";
+  font-family: "Barter";
 }
 
 .price {
   text-shadow: none;
-  font-family: "SummerDays";
-  font-size: 36px;
+  font-family: "Barter";
+  font-size: 28px;
   letter-spacing: 4px;
   color:white;
 }
 
 .item-description {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: "Barter";
   color:white;
@@ -498,40 +748,184 @@ a.anchor {
     visibility: hidden;
 }
 
+@media (min-width: 992px) {
+
+    .bigPadding {
+    padding-left:180px !important;
+    padding-right:180px !important;
+  }
+
+  .deliveryMenuSlider {
+    width:35vw;
+  }
+
+  #navbarDesktopSpacing {
+    justify-content: space-between;
+    width:100%;
+  }
+
+  .nav-item {
+    margin:0px !important;
+  }
+
+  .orderTakeoutContainer {
+    top:120px !important
+  }
+
+  #nav-itemFixButton {
+    margin:0px !important;
+  }
+
+
+.logoDesktopFlex {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-mobile {
+  display:none !important;
+}
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { ... }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #logo {
-    display: block;
-    width:304px;
+
+
+
+
+  .item{
+  width: 350px;
+  height: 523px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:40px;
+}
+
+.imgSliderTest {
+  width:350px;
+  height:523px;
+  margin-right:40px;
+
+}
+
+  .containerSlider{
+    background: #000;
+    display: flex;
+    padding:0px 180px;
+    height: 550px;
+    min-height:550px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width:100%;
   }
 
-  #logo-mobile {
-    display: none !important;
+  .toggleColumn {
+    flex-direction: row;
   }
+
+  .deliveryButton, .takeoutButton {
+    width:200px !important;
+    height:56px !important;
+    font-size:32px !important;
+  }
+
+  .bigPadding {
+    padding-left:80px !important;
+    padding-right:80px !important;
+  }
+
+  #smashburgerTitle {
+  text-shadow: 3px 3px 3px  #00A8FF, -3px -3px 3px  #00A8FF, 3px -3px 3px  #00A8FF, -3px 3px 3px  #00A8FF;
+  width: 75%;
+}
+
+  #chickenTitle {
+    width: 75%;
+  }
+
+  .flexToggle {
+    flex-direction: row;
+  }
+
+  .menuImg-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menuImg {
+  width:400px;
+  height:auto;
+  }
+
+
+  .nav-item {
+  margin-left:18px;
+  margin-right:18px;
+}
+  .navbar-collapse {
+    height:auto;
+  }
+  .orderTakeoutContainer {
+    position: fixed;
+    top:108.19px;
+    width:100%;
+    background-color:black;
+    padding-bottom:20px;
+    z-index:9996;
+  }
+
+    .orderTakeoutContainer2 {
+    display: none;
+  }
+
+  .button {
+    width:120px;
+    height:40px;
+    border:2px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:24px;
+    font-family:"Barter";
+  }
+  #logo {
+    display: none;
+/*    width:200px;*/
+  }
+#logoDesktop {
+  width:160px;
+  height:auto;
+}
+
+.logoDesktopFlex {
+  display: none;
+}
+
   .navbar {
     position: fixed !important;
     background: black !important;
     width:100% !important;
-    top:137.91px;
+    top:0px;
     z-index:9997;
+    height:auto;
   }
-}
+
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
       justify-content: center;
   }
   .navbar-collapse {
-    padding-bottom:24px;
     border-bottom:0px;
+    padding-bottom:0px;
   }
 
   body {
-    padding-top:242px;
+    padding-top:120px;
   }
 
   #banner {
@@ -584,16 +978,17 @@ a.anchor {
     background-image: url("./assets/images/welcomeBackgroundGraffiti.png");
     background-repeat: no-repeat;
     background-position: center;
+    margin-top:0px;
   }
 
   #menuNeon {
     width:100%;
-    max-width: 900px;
+    max-width: 700px;
     height:auto;
   }
 
   #welcomeTxt {
-    font-family: "SummerDays";
+    font-family: "Barter";
     font-size: 40px;
     letter-spacing: 10%;
   }
@@ -637,20 +1032,19 @@ a.anchor {
   }
 
   #heatIndex {
-    font-family: "SummerDays";
+    font-family: "Barter";
     font-size: 72px;
     letter-spacing: 8px;
   }
 
   .menuTxt {
-    font-family: "SummerDays";
+    font-family: "Barter";
     font-size:32px;
-    text-align: center;
     letter-spacing: 10%;
   }
   .title {
-    font-family: "SummerDays";
-    font-size: 72px;
+    font-family: "Barter";
+    font-size: 48px;
     letter-spacing: 8px;
   }
 
@@ -664,21 +1058,21 @@ a.anchor {
     display: none;
   }
   .item-title {
-    font-size:48px;
+    font-size:36px;
     letter-spacing: 8px;
-    font-family: "SummerDays";
+    font-family: "Barter";
   }
 
   .price {
     text-shadow: 2px 2px 0px  white, -2px -2px 0px  white, 2px -2px 0px  white, -2px 2px 0px  white;
-    font-family: "SummerDays";
-    font-size: 48px;
+    font-family: "Barter";
+    font-size: 36px;
     letter-spacing: 8px;
     color:black;
   }
 
   .item-description {
-    font-size: 32px;
+    font-size: 20px;
     text-transform: uppercase;
     font-family: "Barter";
     color:white;
@@ -691,7 +1085,7 @@ a.anchor {
   }
 
   .food-item-container {
-    width:75%;
+    width:100%;
   }
 
   #itemsBackgroundGraffiti {
