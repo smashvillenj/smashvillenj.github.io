@@ -203,10 +203,11 @@ body {
 
   .orderTakeoutContainer {
     position: fixed;
-    top:108.19px;
+    top:100px;
     width:100%;
     background-color:black;
     padding-bottom:20px;
+    padding-top:20px;
     z-index:9996;
   }
 
@@ -871,11 +872,12 @@ a.anchor {
   }
   .orderTakeoutContainer {
     position: fixed;
-    top:108.19px;
+    top:100px;
     width:100%;
     background-color:black;
     padding-bottom:20px;
     z-index:9996;
+    padding-top:20px;
   }
 
     .orderTakeoutContainer2 {
