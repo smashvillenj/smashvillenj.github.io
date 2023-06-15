@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./animations.js"></script>
   <title>Smashville NJ</title>
 </head>
 
@@ -14,60 +17,117 @@
 
 
   <!-- LOGO -->
-  <div id="logo-container" class="container-fluid d-flex justify-content-center align-items-center p-4">
+  <div id="logo-container" class="container-fluid d-flex justify-content-center align-items-center">
     <img src="./assets/images/logo.png" alt="smashvillenj-logo" id="logo" class="">
   </div>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid " style="padding:20px;">
 
-
-      <button class="navbar-toggler" style="margin-right:40px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#topAnchor" style="margin:0px;">
+     <a class="navbar-brand" href="#topAnchor">
         <img src="./assets/images/logo-mobile.png" alt="" id="logo-mobile" class="d-inline-block align-text-top">
       </a>
-      <div class="mobileSocials">
-        <a target="_blank" rel="noopener noreferrer"  href="https://instagram.com/smashvillenj?igshid=YmMyMTA2M2Y="><img src="./assets/images/instagramTop.png" class="nav-social" alt=""></a>
-        <a target="_blank" rel="noopener noreferrer"  href="https://www.tiktok.com/@smashvillenj?_t=8VzX0rz6PU6&_r=1"><img src="./assets/images/tiktokTop.png" class="nav-social" alt=""></a>
-      </div>
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+ 
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="navbarDesktopSpacing">
+          <li class="nav-item" id="nav-itemFixButton">
+              <div class="container-fluid orderTakeoutContainer2" style="margin-top:10px">
+                <div class="row">
+                  <div class="col d-flex justify-content-center align-items-center" style="padding:0px;">
+                    <div class="button deliveryButton" style="margin-right:10px; margin-left:0px" >
+                      DELIVERY
+                    </div>
+                    <a href="https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick" id="orderOnlineButton
+" class="button takeoutButton" style="margin-right:0px; margin-left:10px; " target=”_blank”>
+                      TAKEOUT
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#featuredAnchor">FEATURED</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#menuAnchor">MENU</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#hoursAnchor">HOURS</a>
           </li>
+
+          <li class="nav-item logoDesktopFlex">
+                <img src="./assets/images/logo.png" alt="smashvillenj-logo" id="logoDesktop" class="">
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#locationAnchor">LOCATION</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#faqAnchor">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contactAnchor">CONTACT</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#galleryAnchor">GALLERY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick" id="orderOnlineButton">ORDER NOW</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.grubhub.com/restaurant/4297600" id="grubHubButton" >GRUBHUB</a>
+        <div class="mobileSocials">
+        <a target="_blank" rel="noopener noreferrer"  href="https://instagram.com/smashvillenj?igshid=YmMyMTA2M2Y="><img src="./assets/images/instagramTop.png" class="nav-social" alt=""></a>
+        <a target="_blank" rel="noopener noreferrer"  href="https://www.tiktok.com/@smashvillenj?_t=8VzX0rz6PU6&_r=1"><img src="./assets/images/tiktokTop.png" class="nav-social" alt=""></a>
+      </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <a target="_blank" href= 'https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick' rel="noopener noreferrer" class="" id="fixedOrderNowButton">
-    ORDER NOW
-  </a>
+  <div class="container-fluid orderTakeoutContainer" >
+    <div class="row">
+      <div class="col d-flex justify-content-center align-items-center">
+        <div class="button deliveryButton" style="margin-right:10px">
+          DELIVERY
+        </div>
+        <a href="https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick" id="orderOnlineButton
+  " class="button takeoutButton" style="margin-right:0px; margin-left:10px; " target=”_blank”>
+            TAKEOUT
+          </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="deliveryMenuSlider displayNone" >
+    
+        <ul style="list-style-type:none; " class="logoWhite">
+          <li style="display:flex; justify-content: space-between;">
+            <a class="navbar-brand" href="#topAnchor">
+        <img src="./assets/images/logoWhite.png" class="" alt="" id="logo-mobile" class="d-inline-block align-text-top ">
+      </a>
+        <img src="./assets/images/close.png" class="toggle2">
+          </li>
+          <li class="delivery-title">
+            DELIVERY OPTIONS
+          </li>
+          <li class="delivery-item">
+            <a href="https://www.doordash.com/store/23536758?utm_source=mx_share" target="_blank">DOORDASH</a>
+          </li >
+          <li class="delivery-item">
+            <a href="https://ubereats.app.link/P7IsCeR7xAb" target="_blank">UBER EATS</a>
+          </li>
+          <li class="delivery-item">
+            <a href="https://www.grubhub.com/restaurant/4297600" target="_blank">GRUBHUB</a>
+          </li>
+        </ul>
+     
+  </div>
+
+<!--   <a target="_blank" href= 'https://www.clover.com/online-ordering/smashville-hot-chicken--burgers-new-brunswick' rel="noopener noreferrer" class="" id="fixedOrderNowButton">
+    TAKEOUT
+  </a> -->
 <!-- announcement BANNER -->
 <!--    <div class="" id="fixedAnnouncementBanner">
     Closing 9 pm 5/5 & 5/6, last order 8:45 pm
@@ -78,24 +138,37 @@
   <a class="anchor" id="topAnchor"></a>
 
   <!-- BANNER -->
+<!--   <div class="scrollOuter">
+    <div class="sliderTestContainer">
+      <img src="./assets/images/chickenSammy.png" class="imgSliderTest" style="margin-left:90px;">
+      <img src="./assets/images/doublePatty.png" class="imgSliderTest">
+            <img src="./assets/images/chickenTender.png" class="imgSliderTest">
+
+      <img src="./assets/images/smashFries.png" class="imgSliderTest">
+    </div>
+  </div> -->
+
+
+
   <div class="container-fluid">
     <div class="row">
       <div class="col d-flex flex-column align-items-center justify-content-center">
-        <div class=" d-flex justify-content-center">
-          <img src="./assets/images/banner.png" id="banner" alt="">
-        </div>
+        <!-- <div class=" d-flex justify-content-center" style="position:relative"> -->
+          <!-- <img src="./assets/images/loro-large-smoke-05.gif" class="hoverAnimation smoke"> -->
+          <!-- <img src="./assets/images/banner.png" id="banner" alt=""> -->
+        <!-- </div> -->
 
-        <div class="container-fluid d-flex justify-content-center">
+<!--         <div class="container-fluid d-flex justify-content-center">
           <div class="row">
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center" >
               <img src="https://ik.imagekit.io/s3rnd2unn/mobileBanner3.png" id="mobileBanner" class="mb-3" alt="">
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- WELCOME -->
 
-        <div class="mb-3 m-lg-5 mb-lg-0 mt-lg-0 container-fluid d-flex flex-column justify-content-center align-items-center" id="welcomeBanner">
+        <div class="mb-1 m-lg-5 mb-lg-0 mt-lg-0 container-fluid d-flex flex-column justify-content-center align-items-center" id="welcomeBanner">
           <div class="row">
             <div class="col d-flex flex-column align-items-center justify-content-center">
               <img src="./assets/images/welcomeToSmashville.png" id="welcomeToSmashville" alt="">
@@ -105,13 +178,43 @@
             </div>
           </div>
         </div>
+                <a class="anchor" id="featuredAnchor"></a>
+
+
+       <div id="chickenTitle" class="title mb-5" style="padding-left:15px;">
+                  FEATURED 
+                </div>
+
+        <div class="containerSlider" id="items-container">
+  <div class="item"> 
+    <img src="https://ik.imagekit.io/s3rnd2unn/chickenSammy_aceFnuTq3.png?updatedAt=1686790705194" class="imgSliderTest">
+  </div>
+  <div class="item">
+    <img src="https://ik.imagekit.io/s3rnd2unn/doublePatty_o9CQItt88.png?updatedAt=1686790705721" class="imgSliderTest">
+  </div>
+    <div class="item">
+    <img src="https://ik.imagekit.io/s3rnd2unn/tenders_iXAHSqvHr.png?updatedAt=1686790707356" class="imgSliderTest">
+  </div>
+  <div class="item"> 
+    <img src="https://ik.imagekit.io/s3rnd2unn/chickenTender_wUyqCxqSE.png?updatedAt=1686790705703" class="imgSliderTest"> 
+  </div>
+  <div class="item">
+    <img src="https://ik.imagekit.io/s3rnd2unn/smashFries_pgvB6hnDF.png?updatedAt=1686790707582" class="imgSliderTest">
+  </div>
+    <div class="item">
+    <img src="https://ik.imagekit.io/s3rnd2unn/hotFries_o_bw9JKrC.png?updatedAt=1686790706059" class="imgSliderTest">
+  </div>
+
+</div>
+
 
         <a class="anchor" id="menuAnchor"></a>
         <!-- MENU -->
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="menuBanner">
           <div class="row">
-            <div class="col d-flex flex-column align-items-center justify-content-center">
+            <div class="col d-flex flex-column align-items-center justify-content-center neonHeader">
               <img src="https://ik.imagekit.io/s3rnd2unn/menu.png" alt="menuNeonLights" id="menuNeon">
+               
             </div>
           </div>
         </div>
@@ -120,31 +223,43 @@
 
 
           <!-- HEAT INDEX -->
-          <div class="mb-0 mb-lg-2 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
-            <div class="row">
-              <div class="col d-flex flex-column align-items-center justify-content-center p-0">
-                <div id="heatIndex" class="mb-3 redTitle">
+          <div class="mb-0 mb-lg-2 h-100 container-fluid d-flex flex-column justify-content-center align-items-start bigPadding">
+            <div class="row toggleColumn">
+              <div class="col d-flex flex-column align-items-center justify-content-start ">
+                <div id="chickenTitle" class="mb-3 title redTitle w-100">
                   HEAT INDEX
                 </div>
-                <div class="menuTxt mb-3">
+                <div class="menuTxt mb-3 ">
                   FOR ANYTHING HOT CHICKEN. CHOOSE YOUR SPICE LEVEL
                 </div>
-                <img src="./assets/images/heatScale.png" class="mb-5" id="heatIndexImg" alt="heatIndex">
-                <img src="./assets/images/heatScale.png" class="mb-5" id="heatIndexImgMobile" alt="heatIndex">
-
               </div>
+              <div class="col d-flex justify-content-center align-items-center">
+                <img src="https://ik.imagekit.io/s3rnd2unn/heatScale_hfeBn78RY.png?updatedAt=1686790696221" class="mb-0" id="heatIndexImg" alt="heatIndex">
+                <img src="https://ik.imagekit.io/s3rnd2unn/heatScale_hfeBn78RY.png?updatedAt=1686790696221" class="mb-0" id="heatIndexImgMobile" alt="heatIndex">
+              </div>
+            </div>
+
+          <div class="row w-100 mb-3">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
             </div>
           </div>
 
 
           <!-- HOT CHICKEN -->
-          <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
-            <div class="row">
-              <div class="col d-flex flex-column align-items-center justify-content-center">
+          <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+            <div class="row flexToggle">
+              <div class="col d-flex align-items-start justify-content-center flex-column">
                 <div id="chickenTitle" class="title mb-3">
                   HOT CHICKEN
                 </div>
-                <img src="./assets/images/line.png" class="mb-3 mb-lg-5  line" alt="line">
+
                 <div class="food-item-container mb-1">
                   <div class="d-flex w-100 justify-content-between align-items-center">
                     <div class="item-title redTitle">
@@ -164,7 +279,7 @@
                       HOT FRIES
                     </div>
                     <div class="price">
-                      $11
+                      $11.5
                     </div>
                   </div>
                   <div class="item-description">
@@ -177,7 +292,7 @@
                       SINGLE TENDER
                     </div>
                     <div class="price">
-                      $4
+                      $4.5
                     </div>
                   </div>
                   <div class="item-description">
@@ -185,24 +300,46 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col">
+            <div class="container-fluid menuImg-container" >
+            <div class="row">
+              <div class="col p-0">
+                <img class="menuImg" src="https://ik.imagekit.io/s3rnd2unn/chickenSammy_aceFnuTq3.png?updatedAt=1686790705194">
+              </div>
+            </div>
+        </div>
+
+              </div>
+            </div>
+            <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
             </div>
           </div>
 
+
+
           <!-- SMASHBURGERS -->
-          <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
-            <div class="row">
-              <div class="col d-flex flex-column align-items-center justify-content-center">
+          <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+            <div class="row flexToggle">
+              <div class="col d-flex flex-column align-items-start justify-content-center">
                 <div id="smashburgerTitle" class="title mb-3">
                   SMASHBURGERS
                 </div>
-                <img src="./assets/images/line.png" class="mb-3 mb-lg-5 line" alt="line">
                 <div class="food-item-container mb-1">
                   <div class="d-flex w-100 justify-content-between align-items-center">
                     <div class="item-title blueTitle">
                       SINGLE PATTY
                     </div>
                     <div class="price">
-                      6$
+                      $6.5
                     </div>
                   </div>
                   <div class="item-description">
@@ -215,11 +352,23 @@
                     DOUBLE PATTY
                   </div>
                   <div class="price">
-                    $8
+                    $8.5
                   </div>
                 </div>
                 <div class="item-description">
                   2 smashed beef patties, melted American Cheese, Pickles, Sauteed Onions, Smash sauce, served on a Potato Roll </div>
+              </div>
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title blueTitle">
+                    TRIPLE PATTY
+                  </div>
+                  <div class="price">
+                    $10.5
+                  </div>
+                </div>
+                <div class="item-description">
+                  3 smashed beef patties, melted American Cheese, Pickles, Sauteed Onions, Smash sauce, served on a Potato Roll </div>
               </div>
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
@@ -231,8 +380,43 @@
                   </div>
                 </div>
                 <div class="item-description">
-                  Smashed and chopped patty, melted American Cheese, Pickles, Coleslaw, Comeback sauce served over a bed of crispy seasoned fries </div>
+                  Smashed and chopped patty, melted American Cheese, Pickles, Comeback sauce served over a bed of crispy seasoned fries </div>
               </div>
+            </div>
+
+            <div class="col">
+            <div class="container-fluid menuImg-container" >
+                <div class="row">
+                  <div class="col">
+                    <img class="menuImg" src="https://ik.imagekit.io/s3rnd2unn/doublePatty_o9CQItt88.png?updatedAt=1686790705721">
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+                     <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
+            </div>
+        </div>
+
+
+
+
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+            <div class="row flexToggle">
+              <div class="col d-flex flex-column align-items-center justify-content-center">
+                <div id="" class="title mb-3 greenTitle w-100">
+                  VEGGIE 
+                </div>
+
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
                   <div class="item-title greenTitle">
@@ -265,20 +449,34 @@
               </div>
             </div>
           </div>
+
+
+
+           <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
+            </div>
         </div>
 
-        <!-- EXTRAS -->
-        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center">
-          <div class="row w-100">
+
+
+                <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+          <div class="row w-100 flexToggle">
             <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
-              <div class="title mb-3">
-                ADD-ONS
+              <div class="title mb-3 goldTitle w-100">
+                FRIES
               </div>
-              <img src="./assets/images/line.png" class="mb-3 mb-lg-5  line" alt="line">
+
 
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
-                  <div class="item-title">
+                  <div class="item-title goldTitle">
                     FRIES
                   </div>
                   <div class="price">
@@ -290,33 +488,230 @@
 
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
-                  <div class="item-title">
-                    SMASHSAUCE
+                  <div class="item-title goldTitle">
+                    HOT FRIES
                   </div>
                   <div class="price">
-                    $0.50
+                    $11.5
                   </div>
                 </div>
 
               </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title goldTitle">
+                    SMASH FRIES
+                  </div>
+                  <div class="price">
+                    $11
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title goldTitle">
+                    IMPOSSIBLE FRIES
+                  </div>
+                  <div class="price">
+                    $13
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title goldTitle">
+                    CAJUN FRIES
+                  </div>
+                  <div class="price">
+                    $4.5
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title goldTitle">
+                    CHEESE FRIES
+                  </div>
+                  <div class="price">
+                    $5
+                  </div>
+                </div>
+
+              </div>
+
+          </div>
+          <div class="col">
+            <div class="container-fluid menuImg-container" >
+            <div class="row">
+              <div class="col p-0">
+                <img class="menuImg" src="https://ik.imagekit.io/s3rnd2unn/smashFries_pgvB6hnDF.png?updatedAt=1686790707582">
+              </div>
+            </div>
+        </div>
+
+              </div>
+        </div>
+
+                    <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
+            </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- EXTRAS -->
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+          <div class="row w-100">
+            <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="title mb-5 w-100">
+                SIDES & ADD-ONS
+              </div>
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    PICKLES, JALAPENOS, CHEESE, ONIONS, EACH.
+                  </div>
+                  <div class="price">
+                    75¢
+                  </div>
+                </div>
+
+              </div>
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    SMASHSAUCE
+                  </div>
+                  <div class="price">
+                    75¢
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    SPICY SMASHSAUCE
+                  </div>
+                  <div class="price">
+                    75¢
+                  </div>
+                </div>
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    SMASHSAUCE
+                  </div>
+                  <div class="price">
+                    75¢
+                  </div>
+                </div>
+              </div>
+
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
                   <div class="item-title">
                     COMEBACK SAUCE
                   </div>
                   <div class="price">
-                    $0.50
+                    75¢
                   </div>
                 </div>
 
               </div>
+
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
                   <div class="item-title">
-                    MEXICAN COKE
+                    RANCH
                   </div>
                   <div class="price">
-                    $3.50
+                    75¢
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    CHEESE SAUCE
+                  </div>
+                  <div class="price">
+                    75¢
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    COLESLAW
+                  </div>
+                  <div class="price">
+                    $1
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+          <div class="row w-100">
+            <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="title mb-5 w-100">
+                DRINKS
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    WATER
+                  </div>
+                  <div class="price">
+                    $1.5
                   </div>
                 </div>
 
@@ -335,54 +730,129 @@
               <div class="food-item-container mb-1">
                 <div class="d-flex w-100 justify-content-between align-items-center">
                   <div class="item-title">
-                    WATER
+                    JUICE
                   </div>
                   <div class="price">
-                    $1.50
+                    $2.5
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    REDBULL
+                  </div>
+                  <div class="price">
+                    $2.75
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="food-item-container mb-1">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <div class="item-title">
+                    MEXICAN SODA
+                  </div>
+                  <div class="price">
+                    $3.5
                   </div>
                 </div>
 
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
-
-      <a class="anchor" id="galleryAnchor"></a>
-
-      <!-- GALLERY -->
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-center" id="menuBanner">
-        <div class="row">
-          <div class="col d-flex flex-column align-items-center justify-content-center">
-            <img src="https://ik.imagekit.io/s3rnd2unn/gallery.png" alt="menuNeonLights" id="menuNeon">
+                      <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
           </div>
         </div>
+        
+            </div>
+        </div>
+
+                <div class="mb-3 h-100 container-fluid d-flex flex-column justify-content-center align-items-center bigPadding">
+          <div class="row w-100">
+            <div class="col p-0 d-flex flex-column align-items-center justify-content-center">
+              <div class="title mb-5 pinkTitle w-100">
+                SMASH-TREATS
+              </div>
+
+                <div class="food-item-container mb-1">
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="item-title pinkTitle">
+                      SOFT SERVE
+                    </div>
+                    <div class="price">
+                      $5.5
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    soft serve vanilla ice cream with two of your desired mix-ins
+                  </div>
+                </div>
+                <div class="food-item-container mb-1">
+                  <div class="d-flex w-100 justify-content-between align-items-center">
+                    <div class="item-title pinkTitle">
+                      MILKSHAKE
+                    </div>
+                    <div class="price">
+                      $7
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    vanilla milkshake with two of your desired mix-ins
+                  </div>
+                </div>
+                <div class="item-description" style="width:100%">
+                    *EVERY ADDITIONAL MIX-IN + $0.50
+                </div>
+            </div>
+          </div>
+
+          <div class="row w-100">
+            <div class="container-fluid dashedLine-container p-0 mt-5">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/images/dashLine.png" class="dashedLine">
+            </div>
+          </div>
+        </div>
+        
+            </div>
+        </div>
+
       </div>
+
 
 
       <!-- Slider main container -->
-      <div class="swiper mt-4">
+      <!-- <div class="swiper mt-4"> -->
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <!-- <div class="swiper-wrapper"> -->
           <!-- Slides -->
-          <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/doublePatty.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664298288571" class="sliderImage" alt=""></div>
+          <!-- <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/doublePatty.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664298288571" class="sliderImage" alt=""></div>
           <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/chickenSammy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664298296374" class="sliderImage" alt=""></div>
           <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/sliderImage3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663873443545" class="sliderImage" alt=""></div>
           <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/friesNew.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664298681142" class="sliderImage" alt=""></div>
           <div class="swiper-slide"><img src="https://ik.imagekit.io/s3rnd2unn/sliderImage1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663873427294" class="sliderImage" alt=""></div>
 
-        </div>
+        </div> -->
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
 
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+      <!-- </div> -->
 
       <a class="anchor" id="hoursAnchor"></a>
 
