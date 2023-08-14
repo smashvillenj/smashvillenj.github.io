@@ -1091,7 +1091,7 @@ a.anchor {
   }
 
   #itemsBackgroundGraffiti {
-    background-image: url("./assets/images/itemsBackgroundGraffiti.png");
+/*    background-image: url("./assets/images/itemsBackgroundGraffiti.png");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto auto;
